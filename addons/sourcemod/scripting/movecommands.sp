@@ -84,7 +84,9 @@ public void OnPluginStart()
 	cEnableSwapAllCT = CreateConVar("movecommands_enable_swapallct", "1", "Enable / Disable Swap All Players To CT Command", _, true, 0.0, true, 1.0);
 	cEnableSwapAllT = CreateConVar("movecommands_enable_swapallt", "1", "Enable / Disable Swap All Players To T Command", _, true, 0.0, true, 1.0);
 	cEnableSwapAllSpec = CreateConVar("movecommands_enable_swapallspec", "1", "Enable / Disable Swap All Players To Spec Command", _, true, 0.0, true, 1.0);
-
+	
+	AutoExecConfig(true, "movecommands");
+	
 	// Enable/Disable Drops
 	cBombDrop = CreateConVar("movecommands_enable_drop_bomb", "1", "Enable / Disable Bomb Drop",_, true, 0.0, true, 1.0);
 	cDefuserDrop = CreateConVar("movecommands_enable_drop_defuser", "1", "Enable / Disable Defuser Drop",_, true, 0.0, true, 1.0);
